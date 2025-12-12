@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-79.46855163574219, 43.637672424316406]}, "properties": {"vehicle_id": "7216", "trip_id": "37677020", "direction_id": null, "bearing": 166.0, "arrow_bearing": 256.0, "speed": 0.44703999161720276, "label": ""}}]}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TTC GTFS Visualization</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    
+    <!-- MapLibre CSS -->
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+        
+    <div style="position: absolute; top: 10px; left: 10px; z-index: 10; background: white; padding: 10px; border-radius: 4px; display: flex; gap: 10px;">
+        
+        <!-- Route Select -->
+        <div>
+            <label for="route-select">Route:</label><br>
+            <select id="route-select">
+                <option value="">-- Select Route --</option>
+            </select>
+        </div>
+
+        <!-- Direction Select (Initially Disabled) -->
+        <div>
+            <label for="dir-select">Direction:</label><br>
+            <select id="dir-select" disabled>
+                <option value="">-- Select Direction --</option>
+            </select>
+        </div>
+
+    </div>
+
+  
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <script type="module" src="./src/map.js"></script>
+</body>
+
+  
